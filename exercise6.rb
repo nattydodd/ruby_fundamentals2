@@ -9,8 +9,8 @@ grocery_list << "rice"
 
 #Creating a method for list printing
 def list_print(x)
-    x.each do |item|
-    puts "* #{item}"
+    x.map do |item|
+    "* #{item}"
   end
 end
 
@@ -29,7 +29,7 @@ def check_list(x)
   end
 end
 
-#Does you need bananas?
+#Do you need bananas?
 check_list(grocery_list)
 
 #Display the second item on the list
@@ -39,3 +39,7 @@ puts grocery_list[1]
 grocery_list.sort.each do |item|
   puts "* #{item}"
 end
+
+#Deleting an item from the list and re-print
+grocery_list.delete("raspberries")
+puts list_print(grocery_list)
