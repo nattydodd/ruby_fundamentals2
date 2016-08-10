@@ -34,3 +34,8 @@ check_list(grocery_list)
 
 #Display the second item on the list
 puts grocery_list[1]
+
+#Sort the grocery list alphabetically and print
+grocery_list.sort.each do |item|
+  puts "* #{item}"
+end
