@@ -15,3 +15,6 @@ def list_print(x)
 end
 
 new_list = list_print(grocery_list)
+
+total_items = grocery_list.length
+puts total_items
