@@ -16,3 +16,6 @@ student_count(students)
 #Adding cohort 4
 students[:cohort4] = "43"
 student_count(students)
+
+#output all the cohort names
+puts students.keys
