@@ -31,3 +31,6 @@ end
 
 #Does you need bananas?
 check_list(grocery_list)
+
+#Display the second item on the list
+puts grocery_list[1]
