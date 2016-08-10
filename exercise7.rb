@@ -28,3 +28,14 @@ end
 #delete the 2nd cohort and redisplay
 students.delete(:cohort2)
 puts student_count(students)
+
+#Total number of students
+def total_students(students)
+  sum = 0
+    students.each do |key, value|
+  sum += value.to_i
+  end
+  puts "the total number of students is #{sum}"
+end
+
+total_students(students)
