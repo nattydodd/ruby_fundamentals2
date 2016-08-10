@@ -16,5 +16,18 @@ end
 
 new_list = list_print(grocery_list)
 
+#Printing total number of items
 total_items = grocery_list.length
 puts total_items
+
+#Method to see if list includes bananas
+def check_list(x)
+  if x.include? "bananas"
+    puts "You need to pick up bananas"
+  else
+    puts "You don't need to pick up bananas today."
+  end
+end
+
+#Does you need bananas?
+check_list(grocery_list)
