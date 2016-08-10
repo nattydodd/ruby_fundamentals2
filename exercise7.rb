@@ -19,3 +19,8 @@ student_count(students)
 
 #output all the cohort names
 puts students.keys
+
+#increase each cohort size by 5% and display
+students.each do |key, value|
+  puts "#{key}: #{value * 1.05} students"
+end
