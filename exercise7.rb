@@ -24,3 +24,7 @@ puts students.keys
 students.each do |key, value|
   puts "#{key}: #{value * 1.05} students"
 end
+
+#delete the 2nd cohort and redisplay
+students.delete(:cohort2)
+puts student_count(students)
